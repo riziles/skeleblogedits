@@ -338,4 +338,4 @@ While the responsive sidebar drawer is useful, it's worth noting this is [one of
 
 *   Use an [App Rail](https://www.skeleton.dev/components/app-rail) to provide compact vertical navigation.
 *   Append a set of links to your [App Bar](https://www.skeleton.dev/components/app-bar) at the top of the page.
-*   If you need to go deeper, add a popup [Menu](https://www.skeleton.dev/utilities/menus).
+*   If you need to go deeper, add a popup [Menu](https://www.skeleton.dev/utilities/popups).
