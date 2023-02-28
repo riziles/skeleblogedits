@@ -46,6 +46,8 @@ Sponsors
 
 Skeleton Labs opens the door to direct sponsorship of the project. We will be launching new sponsorship programs through GitHub Sponsors and similar services very soon. Whether you're a current Brain & Bones sponsor or wish to begin sponsoring the project, we encourage you to keep an eye out for our upcoming announcements.
 
+_edit: Sponsorship is now available through Ko-Fi. See post ["Support Skeleton on Ko-Fi"](https://skeleton.ghost.io/support-skeleton-on-ko-fi/)_
+
 Wrapping Up
 -----------
 
