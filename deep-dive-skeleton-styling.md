@@ -30,7 +30,7 @@ Please be aware you can test each preset using the "Theme" drop down at the top-
 
 ![](https://skeleton.ghost.io/content/images/2022/12/Screen-Shot-2022-12-26-at-3.19.27-PM.png)
 
-Once you've decided on the theme, visit the **[Guides > Themes](https://dev.skeleton.dev/guides/themes)** to learn how to implement a theme in your project. Prese themes are imported into your project's root layout in `/src/routes/+layout.svelte`.
+Once you've decided on the theme, visit the **[Guides > Themes](https://dev.skeleton.dev/guides/themes)** to learn how to implement a theme in your project. These themes are imported into your project's root layout in `/src/routes/+layout.svelte`.
 
 ```ts
 import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
