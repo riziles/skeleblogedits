@@ -21,17 +21,7 @@ In this tutorial we'll implement a set of responsive components that provide a u
 
 Find the source code for this project here:
 
-[
-
-blog-tutorials/responsive-sidebar-drawer at master · skeletonlabs/blog-tutorials
-
-This directory contains a series of tutorial projects created as part of the Skeleton blog. - blog-tutorials/responsive-sidebar-drawer at master · skeletonlabs/blog-tutorials
-
-![](https://github.com/fluidicon.png)GitHubskeletonlabs
-
-![](https://opengraph.githubassets.com/848cd6033d233a90a49f37f9af2ea2af523cffdf1bf0e50bb453f51033f73dbf/skeletonlabs/blog-tutorials)
-
-](https://github.com/skeletonlabs/blog-tutorials/tree/master/responsive-sidebar-drawer)
+<https://github.com/skeletonlabs/blog-tutorials/tree/master/responsive-sidebar-drawer>
 
 Note that for this tutorial we'll focus on SvelteKit, but most concepts should be applicable to Vite and Astro projects as well.
 
