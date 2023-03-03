@@ -38,6 +38,8 @@ For this project, let's use the following settings:
 
 *   Yes to Typescript Syntax
 *   No for ESLint, Prettier, and Playwright
+*   No to Vitest
+*   No to Svelte-kit experimental inspector
 *   We won't need Tailwind Plugins, so hit enter to skip.
 *   Any theme is fine. We'll use the default.
 *   When prompted, choose the Welcome template.
@@ -76,7 +78,7 @@ Next, let's open the root layout in `/src/routes/+layout.svelte`. Notice two Ske
 Add a Sidebar
 -------------
 
-The App Shell component provides multiple [named slots](https://svelte.dev/tutorial/named-slots). You'll note the use of the `header` and `default` page route slots in the current layout. Let's add one more – a left sidebar slot. Insert the following between the header and default slots.
+The App Shell component provides multiple [named slots](https://svelte.dev/tutorial/named-slots). You'll note the use of the `header` page route slot in the current layout. Let's add one more – a left sidebar slot. Insert the following between the header and default slots.
 
     <AppShell ...>
     	<!-- (Header slot w/ App Bar) -->
