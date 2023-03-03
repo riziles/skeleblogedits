@@ -212,6 +212,8 @@ To change this, let's first implement a new `drawerOpen` function that triggers 
     	drawerStore.open({});
     }
 
+The `: void` here is a type declaration telling TypeScript that this function retuns nothing. In order for Vite to compile this project you may need to add `lang = "TS"` to your script tag in this file.
+
 We'll provide the `{}` param in case we want to adjust the Drawer settings later.
 
 Finally, add a click handler to your new hamburger menu button to trigger this new function on click:
