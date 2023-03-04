@@ -60,14 +60,14 @@ The home page in our minimal Skeleton app.
 
 ### Supporting Dark Mode
 
-Flowbite provides great support for both light and dark mode styles for most elements.  To easily toggle [Tailwind's dark mode](https://tailwindcss.com/docs/dark-mode) we'll use [Skeleton's Light Switch](https://www.skeleton.dev/utilities/lightswitches) utility.
+Flowbite provides great support for both light and dark mode styles for most elements.  To easily toggle [Tailwind's dark mode](https://tailwindcss.com/docs/dark-mode) we'll use [Skeleton's Light Switch](https://www.skeleton.dev/utilities/lightswitches) utility.
 
 Import the component into `/src/routes/+page.svelte`, then add it to your homepage route template. Feel free to replace all content within this page.
 
     <script lang="ts">
         import { LightSwitch } from '@skeletonlabs/skeleton';
     </script>
-
+    
 
 ![](https://skeleton.ghost.io/content/images/2023/01/image-2.png)
 
@@ -105,7 +105,7 @@ Next, let's place the new component on our homepage. Open `/src/routes/+page.sve
     import Timeline from '$lib/Timeline/Timeline.svelte';
 
     <!-- (Light Switch here) --->
-
+    
     <div class="p-10">
         <Timeline />
     </div>
@@ -159,7 +159,7 @@ We'll also quickly modify the `ol` border color to match our theme:
 
     <!-- Before -->
     <ol class="relative border-l border-gray-200 dark:border-gray-700">
-
+    
     <!-- After -->
     <ol class="relative border-l border-surface-400-500-token">
 
@@ -175,7 +175,7 @@ Open `TimelineItem.svelte` again and let's abstract a few things to Svelte props
     	export let description: string = '(Description)';
     	export let badgeText: string = '(Badge)';
     </script>
-
+    
     <li class="mb-10 ml-6">
     	<!-- Slot: Icon -->
     	<span
@@ -228,6 +228,7 @@ We can now implement multiple instances of our `TimelineItem` component on our h
     		description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi tempore amet, necessitatibus eaque, dolorum praesentium nam."
     	/>
     </Timeline>
+
 Note how we set `badgeText` and added a new Skeleton button in the first item.
 
 ![](https://skeleton.ghost.io/content/images/2023/01/Screenshot-2023-01-29-at-3.01.15-PM.png)
@@ -242,7 +243,7 @@ While this is starting to look much better, we should take a moment to implement
 
     <!-- Before -->
     <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">{badgeText}</span>
-
+        
     <!-- After -->
     <span class="badge variant-soft-primary">{badgeText}</span>
 
@@ -252,7 +253,7 @@ This will apply Skeleton's badge styles with a soft primary background.
 
     <!-- Before -->
     <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">...</span>
-
+    
     <!-- After -->
     <span class="absolute flex items-center justify-center w-6 h-6 variant-filled-primary rounded-full -left-3 ring-8 ring-surface-200-700-token">...</span>
 
@@ -266,7 +267,7 @@ We can quickly resolve that spacing issue between the icon and title by adjustin
 
     <!-- Before -->
     <li class="mb-10 ml-6">
-
+        
     <!-- After -->
     <li class="mb-10 ml-10">
 
