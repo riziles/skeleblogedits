@@ -38,6 +38,8 @@ For this project, let's use the following settings:
 
 *   Yes to Typescript Syntax
 *   No for ESLint, Prettier, and Playwright
+*   No to Vitest
+*   No to Svelte-kit experimental inspector
 *   We won't need Tailwind Plugins, so hit enter to skip.
 *   Any theme is fine. We'll use the default.
 *   When prompted, choose the Welcome template.
@@ -76,7 +78,7 @@ Next, let's open the root layout in `/src/routes/+layout.svelte`. Notice two Ske
 Add a Sidebar
 -------------
 
-The App Shell component provides multiple [named slots](https://svelte.dev/tutorial/named-slots). You'll note the use of the `header` and `default` page route slots in the current layout. Let's add one more – a left sidebar slot. Insert the following between the header and default slots.
+The App Shell component provides multiple [named slots](https://svelte.dev/tutorial/named-slots). You'll note the use of the `header` page route slot in the current layout. Let's add one more – a left sidebar slot. Insert the following between the header and default slots.
 
     <AppShell ...>
     	<!-- (Header slot w/ App Bar) -->
@@ -210,6 +212,8 @@ To change this, let's first implement a new `drawerOpen` function that triggers 
     	drawerStore.open({});
     }
 
+The `: void` here is a type declaration telling TypeScript that this function retuns nothing. In order for Vite to compile this project you may need to add `lang = "TS"` to your script tag in this file.
+
 We'll provide the `{}` param in case we want to adjust the Drawer settings later.
 
 Finally, add a click handler to your new hamburger menu button to trigger this new function on click:
@@ -328,4 +332,4 @@ While the responsive sidebar drawer is useful, it's worth noting this is [one of
 
 *   Use an [App Rail](https://www.skeleton.dev/components/app-rail) to provide compact vertical navigation.
 *   Append a set of links to your [App Bar](https://www.skeleton.dev/components/app-bar) at the top of the page.
-*   If you need to go deeper, add a popup [Menu](https://www.skeleton.dev/utilities/menus).
+*   If you need to go deeper, add a popup [Menu](https://www.skeleton.dev/utilities/popups).
